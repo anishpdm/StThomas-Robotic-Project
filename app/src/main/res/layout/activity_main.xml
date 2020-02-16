@@ -1,0 +1,43 @@
+<LinearLayout android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/back"
+    android:gravity="center"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:textSize="30dp"
+        android:gravity="center"
+        android:text="ROBOTIC PROJECT"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:layout_marginTop="60dp"
+        android:id="@+id/uname"
+        android:hint="Enter the Username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:id="@+id/pass"
+        android:hint="Enter the Password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+
+    <Button
+        android:textColor="#FFFFFF"
+
+        android:padding="10dp"
+        android:layout_marginTop="15dp"
+        android:textSize="20dp"
+        android:background="@drawable/but"
+        android:text="LOGIN"
+        android:id="@+id/but"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</LinearLayout>

@@ -1,0 +1,64 @@
+<LinearLayout android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/back"
+    android:gravity="center"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+
+    <Button
+        android:textColor="#FFFFFF"
+
+        android:padding="10dp"
+        android:layout_marginTop="15dp"
+        android:textSize="20dp"
+        android:background="@drawable/but"
+        android:text="TURN LEFT"
+        android:id="@+id/but"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+
+    <Button
+        android:textColor="#FFFFFF"
+
+        android:padding="10dp"
+        android:layout_marginTop="15dp"
+        android:textSize="20dp"
+        android:background="@drawable/but"
+        android:text="TURN RIGHT"
+        android:id="@+id/right"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:textColor="#FFFFFF"
+
+        android:padding="10dp"
+        android:layout_marginTop="15dp"
+        android:textSize="20dp"
+        android:background="@drawable/but"
+        android:text="GO STRAIGHT"
+        android:id="@+id/straight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+
+    <Button
+        android:textColor="#FFFFFF"
+
+        android:padding="10dp"
+        android:layout_marginTop="15dp"
+        android:textSize="20dp"
+        android:background="@drawable/but"
+        android:text="REVERSE"
+        android:id="@+id/reverse"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+
+</LinearLayout>
