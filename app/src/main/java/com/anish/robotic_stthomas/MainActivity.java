@@ -9,12 +9,22 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import com.android.volley.AuthFailureError;
+import com.android.volley.Request;
+import com.android.volley.Response;
+import com.android.volley.VolleyError;
+import com.android.volley.toolbox.StringRequest;
+
+import java.util.Map;
+
 public class MainActivity extends AppCompatActivity {
 
 
     Button b1;
     EditText ed1,ed2;
     String getUname,getPass;
+
+    String apilink="http://dummyapilist.herokuapp.com/addcourse";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -36,6 +46,8 @@ public class MainActivity extends AppCompatActivity {
                     Intent intent=new Intent(getApplicationContext(),MenuActivity.class);
                     startActivity(intent);
 
+                    callapi();
+
                 }
                 else {
                     Toast.makeText(getApplicationContext(),"INVALID CREDENTIALS",Toast.LENGTH_LONG).show();
@@ -44,6 +56,33 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+
+    }
+
+    private void callapi() {
+
+        StringRequest stringRequest=new StringRequest(Request.Method.POST, apilink,
+                new Response.Listener<String>() {
+                    @Override
+                    public void onResponse(String response) {
+
+                    }
+                },
+                new Response.ErrorListener() {
+                    @Override
+                    public void onErrorResponse(VolleyError error) {
+
+                    }
+                }
+
+
+        )
+        {
+            @Override
+            protected Map<String, String> getParams() throws AuthFailureError {
+                return super.getParams();
+            }
+        };
 
     }
 }
