@@ -12,12 +12,20 @@
         android:textColor="#FFFF"
         android:gravity="center"
         android:textSize="25dp"
-        android:text="Current Moisture Value : 50 %"
+        android:text="Current Moisture Value "
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
 
 
-
+    <TextView
+        android:id="@+id/display"
+        android:textStyle="bold"
+        android:textColor="#FFFF"
+        android:gravity="center"
+        android:textSize="70dp"
+        android:text="-- "
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
 
 
 </LinearLayout>

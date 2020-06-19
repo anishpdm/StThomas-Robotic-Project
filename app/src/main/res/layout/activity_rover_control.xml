@@ -15,7 +15,7 @@
         android:textSize="20dp"
         android:background="@drawable/but"
         android:text="TURN LEFT"
-        android:id="@+id/but"
+        android:id="@+id/left"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
 
@@ -58,6 +58,21 @@
         android:id="@+id/reverse"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
+
+
+
+    <Button
+        android:textColor="#FFFFFF"
+
+        android:padding="10dp"
+        android:layout_marginTop="15dp"
+        android:textSize="20dp"
+        android:background="@drawable/but"
+        android:text="Stop"
+        android:id="@+id/stop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
 
 
 
