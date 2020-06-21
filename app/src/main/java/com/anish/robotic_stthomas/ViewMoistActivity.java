@@ -22,7 +22,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class ViewMoistActivity extends AppCompatActivity {
-    String Api ="http://3.128.122.63/viewall_api.php";
+    String Api ="http://3.128.122.63/view_moist.php";
     TextView tv;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -50,8 +50,7 @@ public class ViewMoistActivity extends AppCompatActivity {
 
                             if(rslt.equals("ok"))
                             {
-                                String hum = jsonObject.getString("hum");
-                                String temp = jsonObject.getString("temp");
+
                                 String moist = jsonObject.getString("mosit");
                                 tv.setText(moist);
 

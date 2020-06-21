@@ -10,7 +10,7 @@ import android.widget.Button;
 public class MenuActivity extends AppCompatActivity {
 
 
-    Button b1,b2,b3,b4;
+    Button b1,b2,b3,b4,b5;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -20,7 +20,15 @@ public class MenuActivity extends AppCompatActivity {
         b2=(Button)findViewById(R.id.viewHum);
         b3=(Button)findViewById(R.id.viewMoist);
         b4=(Button)findViewById(R.id.viewRover);
+        b5=(Button)findViewById(R.id.cam);
 
+        b5.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(getApplicationContext(),CameraActivity.class);
+                startActivity(intent);
+            }
+        });
 
 
 
